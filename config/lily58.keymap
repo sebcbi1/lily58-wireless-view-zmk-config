@@ -98,10 +98,10 @@
 
         mouse_bt {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans     &trans             &trans           &trans    &trans
-&trans      &trans        &trans        &trans        &trans        &trans                             &trans     &trans     &trans             &trans           &trans    &trans
-&trans      &trans        &trans        &trans        &trans        &trans                             &trans     &mkp MB4   &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &mkp MB5  &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans     &trans     &trans     &trans             &trans           &trans    &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans     &trans             &trans           &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                             &trans     &trans     &trans             &trans           &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans                             &trans     &trans     &kp K_SCROLL_DOWN  &kp K_SCROLL_UP  &trans  &trans
+&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans     &trans     &trans     &trans             &trans           &trans  &trans
                                         &trans        &trans        &trans        &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK  &trans
             >;
 
