@@ -51,11 +51,11 @@
 
             label = "Base";
             bindings = <
-&none  &kp N1            &kp N2        &kp N3        &kp N4        &kp N5                                             &kp N6           &kp N7        &kp N8       &kp N9        &kp N0            &none
-&none  &kp B             &kp W         &kp P         &kp O         &kp Z                                              &kp CARET        &kp V         &kp D        &kp L         &kp J             &none
-&none  &hml RIGHT_ALT A  &hml LCTRL U  &hml LALT I   &hml LSHFT E  &kp COMMA                                          &kp C            &hmr RSHFT T  &hmr LALT S  &hmr RCTRL R  &hmr RIGHT_ALT N  &none
-&none  &kp SLASH         &kp Y         &kp X         &kp PERIOD    &kp K        &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp SQT          &kp Q         &kp G        &kp H         &kp F             &none
-                                       &kp LEFT_GUI  &kp ESCAPE    &lt 3 SPACE  &kp TAB              &lt 2 ENTER      &lt 1 BACKSPACE  &kp DEL       &none
+&none  &kp N1            &kp N2       &kp N3        &kp N4        &kp N5                                             &kp N6           &kp N7        &kp N8        &kp N9       &kp N0            &none
+&none  &kp B             &kp W        &kp P         &kp O         &kp Z                                              &kp CARET        &kp V         &kp D         &kp L        &kp J             &none
+&none  &hml RIGHT_ALT A  &hml LALT U  &hml LCTRL I  &hml LSHFT E  &kp COMMA                                          &kp C            &hmr RSHFT T  &hmr RCTRL S  &hmr LALT R  &hmr RIGHT_ALT N  &none
+&none  &kp SLASH         &kp Y        &kp X         &kp PERIOD    &kp K        &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp SQT          &kp Q         &kp G         &kp H        &kp F             &none
+                                      &kp LEFT_GUI  &kp ESCAPE    &lt 3 SPACE  &kp TAB              &lt 2 ENTER      &lt 1 BACKSPACE  &kp DEL       &none
             >;
         };
 
@@ -85,11 +85,11 @@
 
         nav {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &trans         &trans       &trans          &trans       &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp K_REDO     &kp K_PASTE  &kp K_COPY      &kp K_CUT    &kp K_UNDO  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                       &kp CAPSLOCK   &kp LEFT     &kp DOWN_ARROW  &kp UP       &kp RIGHT   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans     &kp INSERT     &kp HOME     &kp PAGE_DOWN   &kp PAGE_UP  &kp END     &trans
+                        &trans  &trans  &trans  &trans    &kp ENTER  &kp BACKSPACE  &kp DELETE   &trans
             >;
 
             label = "Nav";
