@@ -58,12 +58,14 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&none  &none             &none        &none         &none         &none                                              &none            &none         &none         &none        &none             &none
-&none  &kp B             &kp W        &kp P         &kp O         &kp Z                                              &kp M            &kp V         &kp D         &kp L        &kp J             &none
-&none  &hml RIGHT_ALT A  &hml LALT U  &hml LCTRL I  &hml LSHFT E  &kp COMMA                                          &kp C            &hmr RSHFT T  &hmr RCTRL S  &hmr LALT R  &hmr RIGHT_ALT N  &none
-&none  &kp SLASH         &kp Y        &kp X         &kp PERIOD    &kp K        &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &kp SQT          &kp Q         &kp G         &kp H        &kp F             &none
-                                      &kp LEFT_GUI  &lt 5 ESCAPE  &lt 3 SPACE  &lt 4 TAB            &lt 2 ENTER      &lt 1 BACKSPACE  &lt 6 DELETE  &none
+&none  &none             &none        &none         &none         &none                                  &none            &none         &none         &none        &none             &none
+&none  &kp B             &kp W        &kp P         &kp O         &kp Z                                  &kp M            &kp V         &kp D         &kp L        &kp J             &none
+&none  &hml RIGHT_ALT A  &hml LALT U  &hml LCTRL I  &hml LSHFT E  &kp COMMA                              &kp C            &hmr RSHFT T  &hmr RCTRL S  &hmr LALT R  &hmr RIGHT_ALT N  &none
+&none  &kp SLASH         &kp Y        &kp X         &kp PERIOD    &kp K        &none        &none        &kp SQT          &kp Q         &kp G         &kp H        &kp F             &none
+                                      &kp LEFT_GUI  &lt 5 ESCAPE  &lt 3 SPACE  &lt 4 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 6 DELETE  &none
             >;
+
+            label = " ";
         };
 
         NUMPAD {
@@ -116,11 +118,11 @@
 
         MEDIA {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans        &trans             &trans                &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans        &trans             &kp C_AL_SCREENSAVER  &trans              &trans
-&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &kp C_REWIND  &kp C_VOLUME_DOWN  &kp C_VOL_UP          &kp C_FAST_FORWARD  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans      &trans        &trans             &trans                &trans              &trans
-                        &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE  &kp K_MUTE  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans             &trans        &trans                &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &trans      &trans             &trans        &kp C_AL_SCREENSAVER  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                              &kp C_RW    &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_FAST_FORWARD    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans            &trans      &trans             &trans        &trans                &trans  &trans
+                        &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE  &kp K_MUTE  &trans             &trans
             >;
 
             label = "MEDIA";
