@@ -49,8 +49,6 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
-            hold-trigger-on-release;
-            hold-trigger-key-positions = <6 18 43 30 31 7 8 19 20 21 9 10 11 23 22 35 34 33 32 45 44 46 47 48 57 56 55 54 53 52 51 50 49>;
         };
 
         ltr: ltr {
@@ -63,8 +61,6 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <150>;
             flavor = "balanced";
-            hold-trigger-key-positions = <53 54 55 57 56 42 52 41 51 40 29 28 17 16 5 4 3 15 27 39 50 38 14 26 2 1 13 25 37 36 24 12 0>;
-            hold-trigger-on-release;
         };
     };
 
