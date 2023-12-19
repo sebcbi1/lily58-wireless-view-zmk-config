@@ -44,6 +44,34 @@
             hold-trigger-key-positions = <53 54 55 57 56 42 52 41 51 40 29 28 17 16 5 4 3 15 27 39 50 38 14 26 2 1 13 25 37 36 24 12 0>;
             hold-trigger-on-release;
         };
+
+        ltl: ltl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTL";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+            hold-trigger-key-positions = <6 18 43 30 31 7 8 19 20 21 9 10 11 23 22 35 34 33 32 45 44 46 47 48 57 56 55 54 53 52 51 50 49>;
+        };
+
+        ltr: ltr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LTR";
+            bindings = <&lt>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <53 54 55 57 56 42 52 41 51 40 29 28 17 16 5 4 3 15 27 39 50 38 14 26 2 1 13 25 37 36 24 12 0>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -58,11 +86,11 @@
             //                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
 
             bindings = <
-&none  &none             &none        &none         &none         &none                                  &none            &none         &none         &none        &none             &none
-&none  &kp B             &kp W        &kp P         &kp O         &kp Z                                  &kp M            &kp V         &kp D         &kp L        &kp J             &none
-&none  &hml RIGHT_ALT A  &hml LALT U  &hml LCTRL I  &hml LSHFT E  &kp COMMA                              &kp C            &hmr RSHFT T  &hmr RCTRL S  &hmr LALT R  &hmr RIGHT_ALT N  &none
-&none  &kp SLASH         &kp Y        &kp X         &kp PERIOD    &kp K        &none        &none        &kp SQT          &kp Q         &kp G         &kp H        &kp F             &none
-                                      &kp LEFT_GUI  &lt 5 ESCAPE  &lt 3 SPACE  &lt 4 TAB    &lt 2 ENTER  &lt 1 BACKSPACE  &lt 6 DELETE  &none
+&none  &none             &none        &none         &none         &none                                     &none             &none         &none         &none        &none             &none
+&none  &kp B             &kp W        &kp P         &kp O         &kp Z                                     &kp M             &kp V         &kp D         &kp L        &kp J             &none
+&none  &hml RIGHT_ALT A  &hml LALT U  &hml LCTRL I  &hml LSHFT E  &kp COMMA                                 &kp C             &hmr RSHFT T  &hmr RCTRL S  &hmr LALT R  &hmr RIGHT_ALT N  &none
+&none  &kp SLASH         &kp Y        &kp X         &kp PERIOD    &kp K         &none         &none         &kp SQT           &kp Q         &kp G         &kp H        &kp F             &none
+                                      &kp LEFT_GUI  &ltl 5 ESC    &ltl 3 SPACE  &ltl 4 TAB    &ltr 2 ENTER  &ltr 1 BACKSPACE  &ltr 6 DEL    &none
             >;
 
             label = " ";
