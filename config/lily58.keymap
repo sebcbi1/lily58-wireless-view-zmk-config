@@ -126,7 +126,7 @@
             bindings = <
 &trans  &trans      &trans        &trans        &trans        &trans                             &trans     &trans                &trans              &trans    &trans  &trans
 &trans  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                       &trans     &trans                &trans              &trans    &trans  &trans
-&trans  &trans      &trans        &trans        &trans        &trans                             &mkp MB4   &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &mkp MB5  &trans  &trans
+&trans  &bt BT_CLR  &trans        &trans        &bt BT_PRV    &bt BT_NXT                         &mkp MB4   &kp C_AC_SCROLL_DOWN  &kp C_AC_SCROLL_UP  &mkp MB5  &trans  &trans
 &trans  &trans      &trans        &trans        &trans        &trans        &trans    &trans     &trans     &trans                &trans              &trans    &trans  &trans
                                   &trans        &trans        &trans        &trans    &mkp RCLK  &mkp LCLK  &mkp MCLK             &trans
             >;
@@ -143,7 +143,7 @@
                         &trans  &trans  &trans  &trans    &kp C_PLAY_PAUSE  &kp K_MUTE  &trans             &trans
             >;
 
-            label = "⏯🔊 / ⏻";
+            label = "SND/PWR";
         };
 
         FUNCTION {
